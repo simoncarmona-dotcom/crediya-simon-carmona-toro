@@ -1,0 +1,21 @@
+meta {
+  name: 5. Error Tipo Prestamo Inexistente
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/api/v1/solicitud
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "documento_identidad": "1020304050",
+    "email": "juan.perez@crediya.com",
+    "monto": 5000000,
+    "plazo": 24,
+    "id_tipo_prestamo": 99
+  }
+}
